@@ -50,43 +50,48 @@ public class ToioScript : MonoBehaviour
         //Update Texts
         string message = "";
         if(cube1 != null) {
-            string position = "x" + ((int) cube1.pos.x).ToString() + " y" + ((int) cube1.pos.y).ToString();
+            string position = "x" + ((int) cube1.pos.x).ToString() + " y" + ((int) cube1.pos.y).ToString() + " r" + cube1.angle.ToString();
             string batt = cube1.battery.ToString() + "%";
             pos1.text = position;
             bat1.text = batt;
-            message += "Cube 1: " + position + " Battery: " + batt + "; ";
+            string btn = cube1.isPressed.ToString();
+            message += "Cube 1: " + position + " Battery: " + batt + " Button: " + btn + "; ";
         }
 
         if(cube2 != null) {
-            string position = "x" + ((int) cube2.pos.x).ToString() + " y" + ((int) cube2.pos.y).ToString();
+            string position = "x" + ((int) cube2.pos.x).ToString() + " y" + ((int) cube2.pos.y).ToString() + " r" + cube2.angle.ToString();
             string batt = cube2.battery.ToString() + "%";
             pos2.text = position;
             bat2.text = batt;
-            message += "Cube 2: " + position + " Battery: " + batt + "; ";
+            string btn = cube2.isPressed.ToString();
+            message += "Cube 2: " + position + " Battery: " + batt + " Button: " + btn + "; ";
         }
 
         if(cube3 != null) {
-            string position = "x" + ((int) cube3.pos.x).ToString() + " y" + ((int) cube3.pos.y).ToString();
+            string position = "x" + ((int) cube3.pos.x).ToString() + " y" + ((int) cube3.pos.y).ToString() + " r" + cube3.angle.ToString();
             string batt = cube3.battery.ToString() + "%";
             pos3.text = position;
-            bat3.text = batt; 
-            message += "Cube 3: " + position + " Battery: " + batt + "; ";
+            bat3.text = batt;
+            string btn = cube3.isPressed.ToString();
+            message += "Cube 3: " + position + " Battery: " + batt + " Button: " + btn + "; ";
         }
 
         if(cube4 != null) {
-            string position = "x" + ((int) cube4.pos.x).ToString() + " y" + ((int) cube4.pos.y).ToString();
+            string position = "x" + ((int) cube4.pos.x).ToString() + " y" + ((int) cube4.pos.y).ToString() + " r" + cube4.angle.ToString();
             string batt = cube4.battery.ToString() + "%";
             pos4.text = position; 
             bat4.text = batt;
-            message += "Cube 4: " + position + " Battery: " + batt + "; ";
+            string btn = cube4.isPressed.ToString();
+            message += "Cube 4: " + position + " Battery: " + batt + " Button: " + btn + "; ";
         }
 
         if(cube5 != null) {
-            string position = "x" + ((int) cube5.pos.x).ToString() + " y" + ((int) cube5.pos.y).ToString();
+            string position = "x" + ((int) cube5.pos.x).ToString() + " y" + ((int) cube5.pos.y).ToString() + " r" + cube5.angle.ToString();
             string batt = cube5.battery.ToString() + "%";
             pos5.text = position;
-            bat5.text = batt; 
-            message += "Cube 5: " + position + " Battery: " + batt + "; ";
+            bat5.text = batt;
+            string btn = cube5.isPressed.ToString();
+            message += "Cube 5: " + position + " Battery: " + batt + " Button: " + btn + "; ";
         }
 
         //Early return
