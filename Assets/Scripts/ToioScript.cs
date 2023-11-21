@@ -98,7 +98,7 @@ public class ToioScript : MonoBehaviour
         if(message == "") return;
 
         //Button?
-        //cube1.angle.;
+        //cube1.TargetMove
 
         //Send UDP Locations
         if(udpDestAddr.text != "" && udpDestPort.text != ""){
